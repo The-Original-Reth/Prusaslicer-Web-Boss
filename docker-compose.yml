@@ -1,0 +1,22 @@
+# Prusaslicer - Web Boss: open http://localhost:8960 once it's running.
+#   docker compose up -d --build
+# On a server, update.sh pulls the repo and runs this file (data in ./data next to it).
+services:
+  slicer:
+    build:
+      context: .
+      target: app
+      args:
+        # Parallel compile jobs for the first build (BOSS's dependencies and libslic3r)
+        BUILD_JOBS: "4"
+    image: prusaslicer-web-boss:latest
+    container_name: prusaslicer-web-boss
+    ports:
+      - "8960:8080"
+    volumes:
+      - ./data:/data
+    environment:
+      # Seconds a project is kept after its last browser tab closes
+      SESSION_TTL: "900"
+      MAX_UPLOAD_MB: "500"
+    restart: unless-stopped

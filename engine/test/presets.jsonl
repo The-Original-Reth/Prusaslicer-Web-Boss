@@ -1,0 +1,12 @@
+{"cmd":"select_presets","vendor":"PrusaResearch","printer":"Prusa MK4S 0.4 HF","id":"select"}
+{"cmd":"set","preset":"print","config":{"fill_density":"40%"},"id":"edit-print"}
+{"cmd":"save_preset","preset":"print","name":"0.20mm SPEED @MK4S 0.4HF","id":"system-name"}
+{"cmd":"save_preset","preset":"print","name":"  ","id":"no-name"}
+{"cmd":"save_preset","preset":"print","name":"My 40 infill","id":"save-print"}
+{"cmd":"set","preset":"filament","config":{"temperature":{"index":0,"value":"231"}},"id":"edit-filament"}
+{"cmd":"save_preset","preset":"filament","name":"My PLA","id":"save-filament"}
+{"cmd":"set","preset":"printer","config":{"max_print_height":"200"},"id":"edit-printer"}
+{"cmd":"save_preset","preset":"printer","name":"My MK4S","id":"save-printer"}
+{"cmd":"select_presets","vendor":"PrusaResearch","printer":"My MK4S","print":"0.15mm SPEED @MK4S 0.4HF","id":"other-print"}
+{"cmd":"select_presets","vendor":"PrusaResearch","printer":"My MK4S","print":"My 40 infill","filament":"My PLA","id":"back-to-mine"}
+{"cmd":"quit"}

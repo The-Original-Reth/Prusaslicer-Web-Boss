@@ -1,0 +1,6 @@
+.env
+data/
+node_modules/
+web/dist/
+__pycache__/
+data-boss3/

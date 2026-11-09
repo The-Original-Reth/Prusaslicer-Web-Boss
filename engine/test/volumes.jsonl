@@ -1,0 +1,13 @@
+{"cmd":"select_presets","vendor":"PrusaResearch","printer":"Prusa MK4S 0.4 HF","id":"select"}
+{"cmd":"add_shape","shape":"cube","size":30,"id":"cube"}
+{"cmd":"slice","id":"slice plain cube"}
+{"cmd":"add_volume","object":21,"type":"modifier","shape":"box","id":"add modifier"}
+{"cmd":"volume_config","object":21,"volume":33,"set":{"fill_density":"100%"},"id":"modifier 100% infill"}
+{"cmd":"slice","id":"slice with modifier"}
+{"cmd":"volume_config","object":21,"volume":33,"set":{"support_material":"1"},"id":"object-only setting on a modifier"}
+{"cmd":"add_volume","object":21,"type":"negative","shape":"cylinder","id":"add negative cylinder"}
+{"cmd":"slice","id":"slice with hole"}
+{"cmd":"add_volume","object":21,"type":"modifier","shape":"pyramid","id":"unknown shape"}
+{"cmd":"delete_volume","object":21,"volume":23,"id":"delete the only part"}
+{"cmd":"delete_volume","object":21,"volume":45,"id":"delete the hole"}
+{"cmd":"quit"}

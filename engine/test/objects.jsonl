@@ -1,0 +1,10 @@
+{"cmd":"select_presets","vendor":"PrusaResearch","printer":"Prusa MK4S 0.4 HF","id":"select"}
+{"cmd":"add_shape","shape":"cube","size":25,"id":"cube A"}
+{"cmd":"add_shape","shape":"cube","size":25,"id":"cube B"}
+{"cmd":"slice","id":"slice both"}
+{"cmd":"object_config","object":21,"set":{"fill_density":"80%","perimeters":"5"},"id":"override A"}
+{"cmd":"slice","id":"slice after override"}
+{"cmd":"object_config","object":21,"set":{"temperature":"250"},"id":"not an object setting"}
+{"cmd":"object_config","object":21,"set":{"fill_density":"lots"},"id":"bad value"}
+{"cmd":"object_config","object":21,"remove":["perimeters"],"id":"remove one"}
+{"cmd":"quit"}

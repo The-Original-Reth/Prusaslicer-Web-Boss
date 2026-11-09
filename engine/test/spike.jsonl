@@ -1,0 +1,13 @@
+{"cmd":"hello"}
+{"cmd":"add_shape","shape":"sphere","size":60,"id":"load"}
+{"cmd":"slice","id":"1 first slice"}
+{"cmd":"slice","id":"2 nothing changed"}
+{"cmd":"set","config":{"temperature":"215"},"id":"set temperature"}
+{"cmd":"slice","id":"3 temperature only"}
+{"cmd":"set","config":{"fill_density":"40%"},"id":"set infill"}
+{"cmd":"slice","id":"4 infill density"}
+{"cmd":"set","config":{"perimeters":"4"},"id":"set perimeters"}
+{"cmd":"slice","id":"5 perimeters"}
+{"cmd":"set","config":{"layer_height":"0.1"},"id":"set layer height"}
+{"cmd":"slice","id":"6 layer height"}
+{"cmd":"quit"}

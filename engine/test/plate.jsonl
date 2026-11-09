@@ -1,0 +1,13 @@
+{"cmd":"hello"}
+{"cmd":"select_presets","vendor":"PrusaResearch","printer":"Prusa MK4S 0.4 HF","id":"presets"}
+{"cmd":"add_shape","shape":"sphere","size":40,"id":"sphere"}
+{"cmd":"add_shape","shape":"cube","size":25,"id":"cube (arranges the plate)"}
+{"cmd":"slice","id":"first slice"}
+{"cmd":"set","config":{"fill_density":"40%"},"id":"infill 40%"}
+{"cmd":"slice","id":"after infill change"}
+{"cmd":"transform","object":40,"instance":0,"matrix":[1,0,0,0,0,1,0,0,0,0,1,0,60,60,50,1],"id":"move cube up in the air (should land on the bed)"}
+{"cmd":"slice","id":"after move"}
+{"cmd":"select_presets","vendor":"PrusaResearch","printer":"Prusa MINI & MINI+ 0.4","id":"switch to MINI"}
+{"cmd":"slice","id":"MINI slice"}
+{"cmd":"delete","object":21,"id":"delete sphere"}
+{"cmd":"quit"}

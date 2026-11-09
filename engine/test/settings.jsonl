@@ -1,0 +1,13 @@
+{"cmd":"schema","id":"schema"}
+{"cmd":"select_presets","vendor":"PrusaResearch","printer":"Prusa MK4S 0.4 HF","id":"select"}
+{"cmd":"set","preset":"print","config":{"fill_density":"40%","perimeters":"0"},"id":"set-print"}
+{"cmd":"set","config":{"temperature":{"index":0,"value":"230"}},"id":"set-filament"}
+{"cmd":"set","preset":"print","config":{"fill_density":"lots"},"id":"bad-value"}
+{"cmd":"set","preset":"print","config":{"perimeters":"-3"},"id":"out-of-range"}
+{"cmd":"reset","preset":"filament","keys":["temperature#0"],"id":"reset-one"}
+{"cmd":"select_presets","vendor":"PrusaResearch","printer":"Prusa MK4S 0.4 HF","print":"0.15mm SPEED @MK4S 0.4HF","transfer":true,"id":"transfer"}
+{"cmd":"select_presets","vendor":"PrusaResearch","printer":"Prusa MK4S 0.4 HF","print":"0.20mm SPEED @MK4S 0.4HF","id":"discard"}
+{"cmd":"reset","preset":"print","id":"reset-print"}
+{"cmd":"add_shape","shape":"cube","size":20,"id":"cube"}
+{"cmd":"slice","id":"slice"}
+{"cmd":"quit"}
